@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomFab" parent="@style/Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="cornerSize">48dp</item>
+    </style>
+
+    <style name="MyBottomNavigationText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:minWidth">60dp</item> <!-- Фиксированная ширина -->
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

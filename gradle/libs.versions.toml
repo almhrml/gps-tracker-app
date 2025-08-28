@@ -1,0 +1,44 @@
+[versions]
+kotlin = "1.9.22"  # Совместим с AGP 8.6.0
+ksp = "1.9.22-1.0.17"
+coreKtx = "1.16.0"
+agp = "8.12.1"
+room = "2.6.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+lifecycle = "2.9.0"
+
+osmdroid = "6.1.18"
+osmbonuspack = "6.9.0"
+playServicesLocation = "21.3.0"
+preference = "1.2.1"
+
+[libraries]
+androidx_core_ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx_junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx_espresso_core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx_appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx_activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx_constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+lifecycle_runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle_viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle_livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+androidx_room_runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx_room_ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx_room_compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+preference_ktx = { group = "androidx.preference", name = "preference-ktx", version.ref = "preference" }
+osmdroid_android = { group = "org.osmdroid", name = "osmdroid-android", version.ref = "osmdroid" }
+osmbonuspack = { group = "com.github.MKergall", name = "osmbonuspack", version.ref = "osmbonuspack" }
+play_services_location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+
+[plugins]
+kotlin_android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android_application = { id = "com.android.application", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
